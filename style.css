@@ -26,6 +26,7 @@ body{
     
 }
 .badge{
+    text-align:center;
     background-color:#43Ac63;
     color:white;
     font-weight:bold;
