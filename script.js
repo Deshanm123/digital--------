@@ -22,8 +22,18 @@ document.getElementById("mins").innerHTML=minsNow+" :";
 document.getElementById("sec").innerHTML= secNow; 
 }
 
+function showDate(){
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var date = new Date();
+    var currentdate =  date.getDate();
+    var currentMonth = date.getUTCMonth();
+    document.getElementById("date").innerHTML = currentdate + "-" ; 
+    document.getElementById("month").innerHTML = months[currentMonth] ;
+    
+}
+
 //  showTime();
  setInterval(showTime,100);
-
+showDate();
 
 
